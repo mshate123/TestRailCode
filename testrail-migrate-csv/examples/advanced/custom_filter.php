@@ -65,7 +65,7 @@ function custom_filter($csv)
 			// Custom fields, such as Preconditions, Steps and
 			// Expected Results
 			$custom = array();
-			$custom['preconds'] = trim($row[4]);
+		
 			$custom['steps'] = trim($row[5]);
 			$custom['expected'] = trim($row[6]);
 			$case['custom'] = $custom;
