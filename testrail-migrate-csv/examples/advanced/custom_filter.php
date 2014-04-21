@@ -73,7 +73,7 @@ function custom_filter($csv)
 		else
 		{
 			// Update text fields with additional lines
-			$case['custom']['preconds'] .= "\n" . trim($row[4]);
+		
 			$case['custom']['steps'] .= "\n" . trim($row[5]);
 			$case['custom']['expected'] .= "\n" . trim($row[6]);
 		}	
