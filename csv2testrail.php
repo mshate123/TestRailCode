@@ -42,10 +42,21 @@ function custom_filter ($csv)
 foreach ($csv as $row)
   {
 	//Create a new test case and assign to fields in TestRail
-	$case = array();
-	$case[]
+$case = array();
+		$case['title'] = $row[0];
+		$case['type'] = $row[1];
+		$case['priority'] = $row[2];
  	
-	$cases[]=$case;
+// Custom fields, such as Preconditions, Steps and
+// Expected Results
+
+		$custom = array();
+		$custom['preconds'] = $row[3];
+		$custom['steps'] = $row[6];
+		$custom['expected'] = $row[7];
+		$case['custom'] = $custom;
+ 
+
   }
 return $cases;
 
