@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sections>
+<section>
+<name>Localpoint</name>
+<sections>
+<section>
+<name>LocalpointBridgeAPI</name>
+<sections>
+<section>
+<name>Profiles</name>
+<cases>
+<case>
+<title>ProfVisitHistBaseRuleCreate</title>
+<type>Functionality</type>
+<priority>3</priority>
+<custom>
+<steps>Create an enabled Profile with only a Base Visit history rule.Ie:  json body : {  &quot;name&quot;: &quot;VH Basic Rule Only&quot;,  &quot;description&quot;: &quot;a basic rule only, no attrib&quot;,  &quot;enabled&quot;: true,  &quot;visitRule&quot; : {    &quot;tagName&quot; : &quot;texas&quot;  &lt;----- this needs to match an EXISTING Location Tag in the DB  } }</steps>
+<expected>Verify 200 ok response contains date_created, and rest of the objects from the original POST request</expected>
+</custom>
+</case>
+</cases>
+</section>
+</sections>
+</section>
+</sections>
+</section>
+</sections>
